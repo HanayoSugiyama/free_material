@@ -1,0 +1,132 @@
+@charset "uft-8";
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------
+    共通部分
+---------------*/
+body {
+    font-family: 'Kaisei Tokumin', serif;
+    background-image: url(../images/photo/back.png)
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fef9fb;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+
+
+/*-------------
+   header部分
+---------------*/
+header {
+    padding: 20px;
+    background-color: #f4b3c2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*-------------
+   container部分
+---------------*/
+.info {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.info a {
+    color: #a22041;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.item a {
+    font-weight: bold;
+    font-size: 20px;
+    color: #460e44;
+}
+
+.item img {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    aspect-ratio: 1/1;
+    /*表示画面比率の設定*/
+    object-fit: cover;
+    /*はみ出た部分をトリミング*/
+}
+
+.item {
+    background-color: #f4b3c2;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+.item__feature {
+    font-weight: bold;
+}
+
+.item__info {
+    text-align: left;
+}
+
+.item__member {
+    color: red;
+    width: 280;
+    text-align: left;
+    padding: 10px 0 10px 0;
+}
+
+.none {
+    color: #7a4171;
+}
+
+/*-------------
+   footer部分
+---------------*/
+footer {
+    background-color: #f4b3c2;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    color: #a22041;
+    font-weight: bold;
+    text-align: center;
+}
